@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 
-import { globalState } from '../../states/index';
 import { Global } from '../../interfaces/index';
  
 @Injectable({
@@ -21,7 +20,7 @@ export class GlobalsService {
   }
 
   saveGlobalState(): Blob {
-    const blob = new Blob([JSON.stringify(this.globalState)], { type:`text/json` });
-    return blob;
+    const blob = new Blob([JSON.stringify(this.globalState)], { type: 'text/json' });
+    return blob
   }
 }

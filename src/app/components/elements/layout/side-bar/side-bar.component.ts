@@ -21,6 +21,6 @@ export class SideBarComponent implements OnInit {
   ngOnInit() {
     this.title = this._globalStateService.globalState.game.title;
   
-    // this.fileUrl = URL.createObjectURL(this._globalStateService.saveGlobalState());
+    // this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(this._globalStateService.saveGlobalState()));
   }
 }

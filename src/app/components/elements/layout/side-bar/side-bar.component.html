@@ -1,4 +1,8 @@
 <p class="title">{{title}}</p>
 <p>
-    <a mat-flat-button [href]="fileUrl" download="live-freely.json">Save Game</a>
+    <a mat-stroked-button [href]="fileUrl" download="live-freely.json">Save Game</a>
 </p>
+
+<!-- <div style="text-align:center">
+    <app-material-file-upload (complete)="onFileComplete($event)"></app-material-file-upload>
+</div> -->
